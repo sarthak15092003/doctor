@@ -515,3 +515,29 @@ h2 { font-family: "Libre Caslon Display", Georgia, serif; font-size: 43px; line-
 .footer-btn-call:hover {
   background: var(--secondary) !important;
 }
+
+
+/* Ensure Call Now inside CTA section is clearly visible */
+.care-cta .cta-btn-call {
+  background: rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.6) !important;
+}
+.care-cta .cta-btn-call:hover {
+  background: #ffffff !important;
+  color: var(--primary) !important;
+}
+.care-cta .cta-btn-whatsapp {
+  background: var(--whatsapp) !important;
+  color: #ffffff !important;
+}
+
+/* Hero Call button styling */
+.hero-btn-call {
+  background: #ffffff !important;
+  color: var(--primary) !important;
+  border: 1.5px solid var(--border) !important;
+}
+.hero-btn-call:hover {
+  background: var(--secondary) !important;
+}
