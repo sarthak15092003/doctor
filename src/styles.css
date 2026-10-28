@@ -453,3 +453,65 @@ h2 { font-family: "Libre Caslon Display", Georgia, serif; font-size: 43px; line-
   .contact-dock a svg { width: 22px; height: 22px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms!important; transition-duration: .01ms!important; } }
+
+
+/* Custom enlarged buttons for WhatsApp Now and Call Now */
+.header-book.whatsapp-button {
+  background: var(--whatsapp);
+  color: var(--whatsapp-foreground);
+  font-size: 15px;
+  font-weight: 600;
+  height: 48px;
+  padding-inline: 22px;
+  gap: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px color-mix(in oklab, var(--whatsapp) 40%, transparent);
+}
+.header-book.whatsapp-button:hover {
+  background: color-mix(in oklab, var(--whatsapp) 85%, #000);
+  transform: translateY(-1px);
+}
+.hero-btn-whatsapp, .hero-btn-call, .cta-btn-whatsapp, .cta-btn-call {
+  height: 54px !important;
+  font-size: 16px !important;
+  font-weight: 650 !important;
+  padding-inline: 26px !important;
+  border-radius: 6px !important;
+  gap: 10px !important;
+}
+.footer-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+  width: 100%;
+}
+.footer-btn-whatsapp, .footer-btn-call {
+  height: 52px !important;
+  font-size: 15px !important;
+  font-weight: 650 !important;
+  padding-inline: 22px !important;
+  border-radius: 6px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  width: 100%;
+}
+.footer-btn-whatsapp {
+  background: var(--whatsapp) !important;
+  color: var(--whatsapp-foreground) !important;
+  border: none !important;
+  box-shadow: 0 4px 14px color-mix(in oklab, var(--whatsapp) 30%, transparent);
+}
+.footer-btn-whatsapp:hover {
+  background: color-mix(in oklab, var(--whatsapp) 85%, #000) !important;
+}
+.footer-btn-call {
+  border: 2px solid var(--primary) !important;
+  color: var(--primary) !important;
+  background: transparent !important;
+}
+.footer-btn-call:hover {
+  background: var(--secondary) !important;
+}
