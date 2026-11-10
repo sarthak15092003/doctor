@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="medGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b5e3a" />
+      <stop offset="100%" stop-color="#123d26" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle with medical emerald gradient -->
+  <circle cx="256" cy="256" r="236" fill="url(#medGrad)" />
+  
+  <!-- White medical cross -->
+  <rect x="136" y="216" width="240" height="80" rx="24" fill="#ffffff" />
+  <rect x="216" y="136" width="80" height="240" rx="24" fill="#ffffff" />
+  
+  <!-- Green heartbeat / ECG line inside cross -->
+  <path d="M 160 256 L 210 256 L 230 220 L 255 292 L 275 236 L 290 256 L 352 256" 
+        fill="none" 
+        stroke="#1b5e3a" 
+        stroke-width="16" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+</svg>
